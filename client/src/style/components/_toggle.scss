@@ -1,0 +1,80 @@
+
+.toggle-pl{
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.tgl {
+    display: none;
+
+    & *,
+    & *:after,
+    & *:before,
+    &+.tgl-btn {
+        box-sizing: border-box;
+
+        &::selection {
+            background: none;
+        }
+    }
+
+    +.tgl-btn {
+        outline: 0;
+        display: block;
+        width: toRem(42px);
+        height: toRem(24px);
+        position: relative;
+        cursor: pointer;
+        user-select: none;
+
+        &:after,
+        &:before {
+            position: relative;
+            display: block;
+            content: "";
+            width: toRem(16px);
+            height: toRem(16px);
+            box-shadow: 0px 1px 4px rgba(18, 22, 25, 0.16);
+        }
+
+        &:after {
+            left: 5%;
+            top: 12%;
+        }
+
+        &:before {
+            display: none;
+        }
+    }
+
+    &:checked+.tgl-btn:after{
+        left: 50%;
+    }
+    
+}
+
+.tgl-primary {
+    +.tgl-btn{ 
+        @include toggleSettings(#878D96); 
+    }
+
+    &:checked+.tgl-btn{ 
+        background:  #0043CE;
+    }
+
+    &:disabled +.tgl-btn,
+    &:checked:disabled +.tgl-btn{ 
+        opacity: .5;
+        cursor: not-allowed;
+    }
+}
+
+.disabled-toggle,
+.disabled-toggle:checked {
+    background: $fourth-grey !important;
+}
+
+.tgl-wrap{
+    display: flex;
+    align-items: center;
+}

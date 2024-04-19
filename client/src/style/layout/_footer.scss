@@ -1,0 +1,13 @@
+.footer-main-container{
+    background: $pure-white;
+    height: toRem(75);
+    width: toRem(800);
+    box-shadow: 0px 0px 20px rgba(141, 141, 141, 0.2);
+    border-radius: toRem(10);
+    padding: 16px 32px;
+    @include flex-space-between-end;
+    position: fixed;
+    bottom: toRem(20);
+    left: calc((100% - 50rem)/2);
+    z-index: 99;
+}

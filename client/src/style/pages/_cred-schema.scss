@@ -1,0 +1,69 @@
+.cred-schema-right {
+  .combo-box-container {
+    width: 14rem;
+  }
+}
+
+.cred-schema-card {
+  padding: 0 1.5rem 3rem;
+
+  .form-group {
+    margin-bottom: 0.5rem;
+
+    &.add-schema-style-btn {
+      justify-content: end;
+    }
+  }
+
+  .add-list {
+    margin-left: auto;
+    margin-right: 0;
+    padding: toRem(16);
+    font-size: toRem(16);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+
+    &.active {
+      color: $primary-blue;
+    }
+
+    &:not(.active) {
+      color: $primary-blue-disable;
+    }
+  }
+
+}
+
+.no-schema-property-listed {
+  padding: 100px;
+  text-align: center;
+}
+
+.edit-prop-form {
+  display: flex;
+  flex-direction: row;
+
+  .edit-prop-row {
+      width: 29%;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  }
+
+  .edit-btn-row {
+      width: 14%;
+      margin-top: auto;
+  }
+}
+
+.kyc-status-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: -0.75rem 0 -1.5rem;
+}

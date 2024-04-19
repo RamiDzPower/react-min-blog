@@ -1,0 +1,27 @@
+// .breadcrumb {
+//     display: flex;
+//     flex-wrap: wrap;
+//     margin-bottom: toRem(16);
+//     list-style: none;
+
+//     .breadcrumb-item {
+//         margin-right: toRem(8);
+//         color: $primary-blue;
+//         &.active,
+//         &.active a{
+//             color: $first-black !important;
+//         }
+
+//         + .breadcrumb-item {
+//             &::before {
+//                 content: '';
+//                 float: left;
+//                 width: toRem(16);
+//                 height: toRem(16);
+//                 padding-right: toRem(10);
+//                 background: url('#{$path-to-icons}/icon-chevron-right.svg') no-repeat 100%;
+//             }
+//         }
+//     }
+// }
+

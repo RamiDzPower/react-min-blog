@@ -1,0 +1,126 @@
+// .btn {
+//     @include button-settings (16, Roboto-Regular, $pure-black, 0, 0, 8);
+// }
+
+// .btn-md{
+//     @include button-size (97, 40);
+//     font-family: 'Roboto-Regular';
+// }
+
+// .btn-lg{
+//     @include button-size (120, 44);
+//     font-family: 'Roboto-Regular';
+//     font-size: toRem(18);
+// }
+
+// .btn-xl{
+//     @include button-size (182, 60);
+//     font-family: 'Roboto-Regular';
+//     font-size: toRem(18);
+// }
+
+// .btn-verify{
+//     @include button-size (156, 40);
+//     font-family: 'Roboto-Regular';
+//     font-size: toRem(16);
+// }
+
+// .btn-primary {
+//     @include button-bkg($primary-blue, $pure-white, 1px, transparent);
+// }
+
+// .btn-secondary{
+//     @include button-bkg($pure-white, $primary-blue, 1px, $primary-blue);
+// }
+
+// .btn-login {
+//     @include button-bkg($primary-blue, $pure-white);
+//     @include border-radius(8px);
+//     font-size: toRem(18);
+// }
+
+// // .btn-outline-first {
+// //     color: $first-blue;
+// //     border-color: $second-blue;
+// // }
+
+// // .btn-warning {
+// //     @include button-bkg();
+// // }
+
+// // .btn-success {
+// //     @include button-bkg();
+// // }
+
+// // .btn-danger {
+// //     @include button-bkg();
+// // }
+
+// // .btn-link {
+// //     @include button-bkg();
+// // }
+
+// .btn-login[disabled],
+// .btn-primary[disabled],
+// .btn-warning[disabled],
+// .btn-success[disabled],
+// .btn-danger[disabled] {
+//     @include button-bkg($first-white, $primary-blue-disable, 1px, transparent);
+//     cursor: not-allowed
+// }
+
+
+// .btn-secondary[disabled]{
+//     @include button-bkg($pure-white, $primary-blue-disable, 1px, $primary-blue-disable);
+//     cursor: not-allowed
+// }
+
+// .btn-right {
+//     position: absolute;
+//     right: 24px;
+// }
+
+// .btn-filter {
+//     @include button-size(97, 40);
+//     font-size: toRem(14);
+//     & mat-icon{
+//         position: relative;
+//         top: toRem(7);
+//         left: toRem(5);
+//     } 
+// }
+
+// .btn-search {
+//     @include button-size(110, 40);
+//     font-size: toRem(14);
+//     & mat-icon{
+//         position: relative;
+//         top: toRem(5);
+//         left: toRem(5);
+//     } 
+// }
+
+// .btn-filter[disabled],
+// .btn-search[disabled] {
+//     & mat-icon{
+//         & svg path {
+//             fill: $primary-blue-disable !important;
+//             cursor: not-allowed
+//         }
+//     } 
+// }
+// .button-wrap {
+//     display: flex;
+//     justify-content: flex-end;
+//     align-items: center;
+// }
+
+// .btn-xl-wide {
+//     width: auto;
+//     padding-left: 16px;
+//     padding-right: 16px;
+// }
+
+// .btn-private {
+//     width: toRem(220);
+// }

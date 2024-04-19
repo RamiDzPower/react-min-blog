@@ -1,0 +1,125 @@
+.overlay {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background: rgba(0, 0, 0, 0.7);
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .parent-dialog {
+    background: $pure-white;
+    box-shadow: 0px toRem(5) toRem(8) rgba(0, 0, 0, 0.05);
+    border-radius: toRem(10);
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.dialog {
+    width: toRem(360);
+    height: toRem(236);
+    position: relative;
+    padding: toRem(24);
+
+    .title {
+        h1 {
+            margin-top: unset;
+        }
+    }
+
+    .title h1 {
+        margin-top: unset;
+    }
+
+    .content {
+        margin: toRem(20) 0;
+        
+        .table {
+            max-height: 100%;
+
+            .expand-button {
+                text-align: right;
+            }
+        }
+    }
+
+    .footer-tnc{
+        display: flex;
+        justify-content: space-between;
+        @include absolute(bottom 24px);
+        width: calc(100% - 24px);
+
+        button{
+            font-size: toRem(16);
+        }
+
+        .actions{
+            position: static;
+        }
+    }
+
+    .actions {
+        text-align: right;
+        @include absolute(right 8px bottom 25px);
+
+        button {
+            margin-right: toRem(16);
+        }
+    }
+
+    &.dialog-lg {
+        width: toRem(800);
+        height: toRem(538);
+    }
+
+    &.dialog-lg-auto {
+        width: toRem(800);
+        height: auto;
+    }
+
+    &.dialog-md {
+        width: toRem(560);
+        height: toRem(575);
+    }
+
+    &.dialog-key {
+        width: toRem(560);
+        height: toRem(400);
+    }
+
+    &.dialog-md-height {
+        width: toRem(360);
+        height: toRem(280);
+    }
+
+    &.dialog-xs-height {
+        width: toRem(360);
+        height: toRem(340);
+    }
+}
+
+.dialog-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dialog-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-overflow {
+    overflow-y: scroll;
+}
+
+.static{
+    position: static !important;
+}

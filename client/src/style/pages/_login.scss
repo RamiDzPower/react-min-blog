@@ -1,0 +1,79 @@
+// .main-login-wraper{
+//     @include flex-center;
+// }
+
+// .login-container {
+//     display: inline-block;
+//     width: 50%;
+//     background-color: $pure-white;
+//     margin: 0 auto;
+// }
+
+// .login-input-box {
+//     // margin-top: 248px;
+//     width: toRem(280);
+//     margin: auto;
+// }
+
+// .login-container .logo {
+//     display: block;
+//     margin: 64px auto;
+// }
+
+// .login-hello{
+//     color: $primary-blue;
+//     font-size: toRem(20);
+//     text-align: center;
+//     margin-bottom: toRem(20);
+// }
+
+// .login-container .register {
+//     margin-top: 26px;
+//     text-align: center;
+//     display: block;
+// }
+
+// .login-container {
+//     .login-first-time {
+//         text-align: center;
+//         display: block;
+//         margin: 26px auto;
+//     }
+//     .btn-login{
+//         @include button-size (100%,44);
+//     }
+// }
+
+// .login-bg {
+//     background: url(#{$path-to-images}/login-bkg.jpeg);
+//     width: 60%;
+//     height: 100vh;
+//     background-size: cover;
+//     position: relative;
+    
+//     .login-welcome-text{
+//         font-size: toRem(48);
+//         color: $pure-white;
+//         text-align: right;
+//         margin-top: toRem(160);
+//         margin-right: toRem(60);
+//         line-height: toRem(50);
+//         letter-spacing: toRem(-0.84);
+//     }
+// }
+
+// .login-logo{
+//     display: block;
+//     @include button-size(120,110);
+//     background: url(#{$path-to-images}/n-logo.png) no-repeat;
+//     background-size: contain;
+//     margin: toRem(30) auto;
+// }
+
+// .password-container{
+//     position: relative;
+
+//     .see-pswrd{
+//         @include absolute(right 10px top 20px)
+//     }
+// }

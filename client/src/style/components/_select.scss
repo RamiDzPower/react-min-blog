@@ -1,0 +1,36 @@
+.form-select {
+    width: 100%;
+    height: 40px;
+    border: 1px solid $first-grey;
+    border-radius: 10px;
+    padding: 11px 18px 11px 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: 50%;
+    
+}
+
+.ncid-class mat-form-field {
+    width: toRem(272);
+    height: toRem(40);
+    background: $pure-white;
+    border: 1px solid $first-grey;
+    box-sizing: border-box;
+    border-radius: toRem(10);
+}
+.mat-form-field-wrapper {
+    height: toRem(40);
+    line-height: toRem(40);
+    padding-left: toRem(10);
+    padding-right: toRem(10);
+}
+.mat-select-panel-wrap {
+    border: 1px solid $second-grey;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background-color: $pure-white;
+}

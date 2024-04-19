@@ -1,0 +1,77 @@
+.form-group {
+    margin-bottom: 2rem;
+    @include flex-column;
+    .elm-form,
+    .form-group{
+        margin-bottom: 0;
+    }
+    .error-text {
+        margin-left: 1rem;
+        font-size: toRem(12);
+        color: $first-red;
+
+        &.no-ml {
+            margin-left: 0;
+        }
+    }
+
+    &.half-box{
+        width: 50%;
+    }
+
+    &.full-box{
+        width: 100%;
+    }
+
+    &.row {
+        flex-direction: row;
+
+        label {
+            min-width: toRem(150);
+            max-width: toRem(150);
+            margin-top: toRem(20);
+        }
+
+        .column {
+            display: block;
+            width: 100%;
+
+            input {
+                display: block;
+                width: 100%;
+            }
+        }
+
+
+    }
+
+    .elm-form{
+        margin: 10px 0;
+        width: toRem(200);
+    }
+}
+
+.form-group label {
+    font-size: toRem(12);
+    color: $second-black;
+}
+
+.form-md {
+    display: inline-block;
+    width: 212px;
+}
+
+// .org-card{
+//     label{
+//         width: toRem(110) !important;
+//     }
+// }
+
+.center-box{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    &.space-btw {
+        justify-content: space-between;
+    }
+}
